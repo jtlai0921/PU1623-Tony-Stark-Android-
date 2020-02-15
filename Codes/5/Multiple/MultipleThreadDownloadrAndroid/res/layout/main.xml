@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- 下載路徑提示文字 -->
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/path"
+	    />
+    <!-- 下載路徑輸入框，此處為了方便測試，我們設定了預設的路徑，可以根據需要在使用者界面處修改 -->
+    <EditText
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="http://192.168.1.100:8080/ServerForMultipleThreadDownloader/mmm.mp3"
+	    android:id="@+id/path"
+	    />
+	<!-- 水平LinearLayout佈局，包裹下載按鈕和暫停按鈕 -->
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    >
+	    <!-- 下載按鈕，用於觸發下載事件 -->
+	    <Button
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/button"
+		    android:id="@+id/downloadbutton"
+		    />
+	    <!-- 暫停按鈕，在起始狀態下為不可用 -->
+	    <Button
+	    	android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/stopbutton"
+		    android:enabled="false"
+		    android:id="@+id/stopbutton"
+		    />
+    </LinearLayout>
+    
+    
+    <!-- 水平進度指示器，用圖形化的模式實時顯示進步訊息 -->
+    <ProgressBar
+	    android:layout_width="fill_parent" 
+	    android:layout_height="18dp" 
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:id="@+id/progressBar"
+	    />
+    <!-- 文字框，用於顯示實時下載的百分比 -->
+   	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center"
+	    android:id="@+id/resultView"
+	    />
+     
+</LinearLayout>

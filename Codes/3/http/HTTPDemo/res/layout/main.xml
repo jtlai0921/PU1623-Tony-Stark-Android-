@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="url:" />
+		<EditText android:id="@+id/urlText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="right">
+		<Button android:id="@+id/getBtn" android:text="GET請求"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:id="@+id/postBtn" android:text="POST請求"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+	<TextView android:id="@+id/resultView" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="圖片url:" />
+
+		<EditText android:id="@+id/imageurlText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="" />
+	</LinearLayout>
+	<Button android:id="@+id/imgBtn" android:text="取得圖片"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="right" />
+	<ImageView android:id="@+id/imgeView01" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello"></string>
+  <string name="app_name"></string>
+  <string name="str_play">播放中</string>
+  <string name="str_pause">暫停中</string>
+  <string name="str_stop">停止中</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+  <string name="app_name">httpSHI</string>
+  <string name="title">httpSHI</string> 
+  <string name="str_button1">使用POST模式</string>
+  <string name="str_button2">使用GET模式</string> 
+</resources> 
+

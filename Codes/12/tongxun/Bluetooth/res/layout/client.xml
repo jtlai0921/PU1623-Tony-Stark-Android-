@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button
+		android:id="@+id/startSearchBtn"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="開始搜尋"
+	></Button>
+	<TextView
+		android:id="@+id/clientServersText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip"
+	></TextView>
+	<Button
+		android:id="@+id/selectDeviceBtn"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="選取第一個裝置"
+	></Button>
+	<EditText
+		android:id="@+id/clientChatEditText"
+		android:layout_width="fill_parent"
+		android:layout_height="200dip"
+		android:singleLine="false"
+		android:gravity="top"
+		android:editable="false"
+		android:cursorVisible="false"
+		android:background="#aaa"
+		android:layout_margin="5dip"
+	></EditText>
+	
+	<EditText
+		android:id="@+id/clientSendEditText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	></EditText>
+	<Button
+		android:id="@+id/clientSendMsgBtn"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="傳送"
+	></Button>
+</LinearLayout>

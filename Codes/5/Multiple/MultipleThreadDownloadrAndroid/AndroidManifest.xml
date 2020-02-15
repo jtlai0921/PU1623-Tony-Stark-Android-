@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guan.internet.multipleThreadDownloadAndroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="18" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <!-- 主Acitivity，提供使用者動作的界面和接口 -->
+        <activity
+            android:label="@string/app_name"
+            android:name=".MultipleThreadDownloadAndroid" >
+            <intent-filter >
+                <!-- 套用啟動時啟動入口Activity -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 套用顯示在套用程式清單-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+    <!-- 存取internet權限 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+	<!-- 在SDCard中建立與移除檔案權限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!-- 往SDCard寫入資料權限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>

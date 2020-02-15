@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>		<!-- 宣告xml的版本以及解碼格式 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"><!-- 加入一個垂直的線性佈局 -->
+	<TextView  
+		android:id="@+id/title"
+		android:gravity="center_horizontal"
+		android:textSize="20px"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/title"/><!-- 加入一個TextView控制項 -->
+	<TextView  
+		android:id="@+id/myTextView1"
+		android:textSize="18px"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/myTextView1"/><!-- 加入一個TextView控制項 -->         
+</LinearLayout>

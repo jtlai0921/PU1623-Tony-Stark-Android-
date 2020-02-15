@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Activity01!</string>
+	<string name="app_name">lan</string>
+	<string name="permission_request">容許藍芽請求</string>
+	<!-- 
+	<string name="enable_request">You must tap on the Bluetooth icon to allow
+		activating Bluetooth.</string>
+	-->
+	<string name="enable_request">開啟藍芽</string>
+	
+	<string name="discoverable_request">使裝置能夠被搜尋</string>
+	
+</resources>
